@@ -44,10 +44,10 @@ tpm = tpm[sort(rownames(tpm)),]
 #############################################################################
 #############################################################################
 
-sampleID = read.csv( file.path(input_dir, "sampleID.txt"), stringsAsFactors=FALSE , sep="\t" )
-rownames(sampleID) = sampleID$Patient
-
-colnames(tpm) =  sampleID[ colnames(tpm) , ]$GEO
+# sampleID = read.csv( file.path(input_dir, "sampleID.txt"), stringsAsFactors=FALSE , sep="\t" )
+# rownames(sampleID) = sampleID$Patient
+# 
+# colnames(tpm) =  sampleID[ colnames(tpm) , ]$GEO
 
 #############################################################################
 #############################################################################
